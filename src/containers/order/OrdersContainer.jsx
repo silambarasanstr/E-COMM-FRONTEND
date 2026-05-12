@@ -33,7 +33,7 @@ const OrdersContainer = () => {
   }
 
   return (
-    <div className="min-h-screen px-4 py-10 bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       <div className="max-w-3xl mx-auto space-y-6">
         {/* Success Section */}
         <OrderSuccess orderId={order.orderId} total={order.total} />
@@ -42,7 +42,7 @@ const OrdersContainer = () => {
         <OrderItems items={order.items} />
 
         {/* Actions */}
-        <div className="pt-2">
+        <div >
           <OrderActions
             onHome={() => navigate("/")}
             onCart={() => navigate("/cart")}
